@@ -1,0 +1,36 @@
+var suma(a, b){
+    imprime "Estoy en la funcion suma";
+    imprime a+b;
+}
+
+imprime "Uso de la funcion suma";
+suma(5, 4);
+
+if (5>8){
+    imprime "5 es menor que 8";
+}
+else if(5==6){
+    imprime "5 es igual que 5";
+}
+else{
+    imprime "No entre a ninguna condicion";
+}
+var x=60;
+var y=50;
+imprime "El valor de x es; ";
+imprime x;
+imprime "El valor de y es; ";
+imprime y;
+imprime "";
+imprime "Aqui empieza el while";
+while (x>y){
+    imprime "Valor actual de x: ";
+    imprime x;
+    x=x-1;
+}
+imprime "";
+imprime "Aqui empieza el for";
+for(var a=0; a<5; a=a+1){
+    imprime "Valor actual de a: ";
+    imprime a;
+}

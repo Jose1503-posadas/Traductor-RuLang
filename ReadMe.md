@@ -39,7 +39,7 @@ Este proyecto implementa un traductor para el lenguaje Ru utilizando ANTLR4 y el
 
 ---
 ## Gramatica 
-´´´
+```bash
 grammar Ru;
 
 programa
@@ -140,7 +140,7 @@ atomo
  | NIL            #nilAtom
  ;
 
-´´
+```
 
 ## Compilación
 
@@ -187,7 +187,7 @@ java MainApp
 ## Ejemplpos (imputs)
 ejemplo 1 -> Factores
 
-
+```bash
 var Factores(numero){
     imprime "Factores del numero dado:";
     for(var i = 1; i<= numero; i = i+1){
@@ -201,11 +201,11 @@ var Factores(numero){
 var num=20;
 imprime num;
 Factores(num);
-
+```
 
 ejemplo 2 -> Fibonacci
 
-
+```bash
 imprime "PRIMEROS 10 NUMEROS DE LA SUCESION DE FIBONACCI";
 var x=0;
 var y=1;
@@ -220,10 +220,10 @@ for(var cont=1; cont <= 8; cont=cont+1){
 	x=y;
 	y=z;
 }
-
+```
 
 ejemplo 3
-
+```bash
 imprime "Calculadora de Calificacion";
 var calificacion = 8.7;
 if(calificacion < 6.0){
@@ -241,11 +241,11 @@ else if(calificacion >= 9.0 && calificacion <= 10.0){
 else{
     imprime "Calificacion erronea";
 }
-
+```
 
 ejemplo 4 
 
-
+```bash
 var MinimoComunMultiple(a, b){
 	var temporal=0;
 	var primero = a;
@@ -260,13 +260,13 @@ var MinimoComunMultiple(a, b){
 
 imprime "MAXIMO COMUN DIVISOR";
 MinimoComunMultiple(258, 597);
-
+```
 
 
 
 ejemplo 5
 
-
+```bash
 var MaximoComunDivisor(a, b){
 	var temporal=0;
 	while(b != 0){
@@ -279,3 +279,4 @@ var MaximoComunDivisor(a, b){
 
 imprime "MAXIMO COMUN DIVISOR";
 MaximoComunDivisor(258, 597);
+```
